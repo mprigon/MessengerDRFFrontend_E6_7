@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav-item">
+    <table class="nav-all">
+    <tr>
+        <td class="nav-logo">Итоговое задание модуль Е6.7</td>
+        <td><a class="nav-link" href="/index.html">Главная</a></td>
+        <td><a class="nav-link" href="/letters/letters.html">Сообщения</a></td>
+        <td><a class="nav-link" href="/rooms/rooms.html">Чат группы</a></td>
+        <td><a class="nav-link" href="/profile/profile.html">Профиль</a></td>
+        <td><a class="nav-link" href="/login/login.html">Получить токен</a></td>
+    </tr>
+    </table>    
+  </nav>
+
+  <h1>Получить токен</h1>
+
+  <p>
+    <div>Механизм работы:</div>
+    <ol>
+      <li>Проверка регистрации пользователя</li>
+      <li>Регистрация пользователя по username и password</li>
+      <li>Получение token пользователем</li>
+      <li>Сохранение token в localstorage</li>
+    </ol>
+  </p>
+
+  <form name="login">
+    <p>Войти в систему</p>
+    <fieldset>
+      <p>Пользователь<input name="username" maxlength="25"></p>
+      <p>Пароль<input type="password" name="password" maxlength="25"></p>
+      <p><input class="btn j-btn-request" type="submit" value="Отправить"></p>
+    </fieldset>
+  </form>
+    
+  <div class="result j-result">Зарезервировано для результата запроса</div>
+
+  <script src="login.js"></script>
+</body>

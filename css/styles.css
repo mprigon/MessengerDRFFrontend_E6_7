@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+.nav-item {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nav-link {
+    font-size: x-large;
+    color: white;
+
+}
+
+.nav-logo {
+    font-size: xx-large;
+    color: white;
+}
+
+table.nav-all {
+    width:  100%; /* Ширина таблицы */
+    border-spacing: 0; /* Расстояние между ячейками */
+}
+
+table.nav-all td {
+    width: 25%; /* Ширина ячеек */
+    text-align: center;
+}
+
+a:link {
+    color: #2c2cee; /* Цвет ссылок */
+    padding: 2px; /* Поля вокруг текста */ 
+    font-size: x-large;
+
+}
+
+a:hover {
+    background: #105635; /* Цвет фона под ссылкой */ 
+    color: #ffe; /* Цвет ссылки */
+    font-size: x-large;
+ 
+}
+
+p.text {
+    font-size: x-large;
+}
+
+.footer-items {
+    background-color: rgb(97, 197, 152);
+    color: rgb(111, 3, 3);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+
+}
+
+.float-left {
+    float: left; /* Выравнивание изображения по левому краю  */ 
+    margin: 7px 0 7px 7px; /* Отступы вокруг картинки */
+}
+
+.result {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    
+    margin: 5px 10px;
+    padding: 10px 15px;
+    border-radius: 1px;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: white;
+    background: #315efb;
+    transition: 0.3s;
+}
+  
+.btn:hover {
+    box-shadow: 0px 2px 8px 2px rgba(141,150,178,.3);
+    transform: scale(1.05);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <title>Letters XMLHttpRequest</title>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav-item">
+    <table class="nav-all">
+    <tr>
+        <td class="nav-logo">Итоговое задание модуль Е6.7</td>
+        <td><a class="nav-link" href="/index.html">Главная</a></td>
+        <td><a class="nav-link" href="/letters/letters.html">Сообщения</a></td>
+        <td><a class="nav-link" href="/rooms/rooms.html">Чат группы</a></td>
+        <td><a class="nav-link" href="/profile/profile.html">Профиль</a></td>
+        <td><a class="nav-link" href="/login/login.html">Получить токен</a></td>
+    </tr>
+    </table>    
+  </nav>
+
+  <h1>Сообщения</h1>
+
+  <p>
+  <div>Механизм работы приложения</div>
+    <ol>
+      <li>Ищем</li>
+      <li>Вешаем обработчик <em>click</em> на кнопку, который делает запрос с помощью функции <em>useRequest</em>, результат запроса выводит на страницу с помощью функции <em>displayResult</em></li>
+    </ol>
+  </p>
+    <button class="btn j-btn-request">Запрашиваем все сообщения</button>
+
+    <div class="result j-result">Здесь будет результат запроса</div>
+    
+    <div class="result k-result">Здесь тоже будет результат запроса</div>
+
+    <div>
+      <form name="sendletter">
+        <p>Написать письмо</p>
+        <fieldset>
+          <p>Пользователь<input name="username" maxlength="25"></p>
+          <p>Пароль<input name="password" type="password"  maxlength="25"></p>
+          <p>Получатель<input name="recipient" maxlength="25"></p>
+          <p>Текст<input name="text" type="text"></p>
+          <p><input class="btn k-btn-request" type="submit" value="Отправить"></p>
+        </fieldset>
+      </form>
+    </div>
+
+  <script src="letters.js"></script>
+</body>
